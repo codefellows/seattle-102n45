@@ -1,35 +1,103 @@
-/* entire code */
-* {
+/* entire document */
+body {
   margin: 0px auto;
   width: 960px;
   background-color: rgb(214, 233, 176);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: rgb(31, 44, 4)
+  color: rgb(31, 44, 4);
+
 }
 
 /* header only */
+header {
+  height: 200px;
+}
+
 header > img {
-  width: 150px;
+  margin: 10px;
   float: left;
+  width: 150px;
+  border: none;
+  margin-left: 100px;
+}
+
+header > h1 {
+  margin: 10px;
+  margin-right: 50px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 header > nav {
-  margin-top: 70px;
-  margin-left: 250px;
+  float: right;
+  margin-top: 68px;
 }
 
 header > nav > ul > li {
   display: inline-block;
-  border: 1px solid black;
   width: 100px;
-  margin: 5px;
   padding: 5px;
+  margin: 5px;
   text-align: center;
-  border-radius: 25px;
   background-color: rgb(164, 185, 122);
+  border: 1px solid black;
+  border-radius: 25px;
 }
 
-header > nav > ul > li > a{
-  background-color: inherit;
+header > nav > ul > li > a {
+  color: inherit;
 }
 
+/* main  */
+main > section {
+  width: 940px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.product-images {
+  border: 2px solid rgb(31, 44, 4);
+  margin: 20px 0px 20px 0px;
+}
+
+main > section > article {
+  width: 300px;
+  display: inline-block;
+  border: 5px dotted olivedrab;
+  background-color: rgba(164, 185, 122, .5);
+  border-radius: 25px;
+  margin-bottom: 5px;
+}
+
+
+/* resolves some default styling  */
+figure {
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+  align-content: center;
+}
+footer > nav {
+  width: 150px;
+  display: inline-block;
+  margin-left: 60px;
+}
+footer > nav > ul > li {
+  width: 100px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  background-color: rgb(164, 185, 122);
+  border: 1px solid rgb(31, 44, 4);
+  border-radius: 25px;
+  list-style:  none;
+  color: inherit;
+}
+
+footer > p{
+  text-align: right;
+}
